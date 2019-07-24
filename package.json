@@ -1,0 +1,21 @@
+{
+  "name": "fickle",
+  "version": "1.0.0",
+  "description": "bare-bones text adventure engine written in vanilla ES6",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-modules index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkoeckritz/fickle.git"
+  },
+  "author": "Kris Koeckritz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kkoeckritz/fickle/issues"
+  },
+  "homepage": "https://github.com/kkoeckritz/fickle#readme"
+}
