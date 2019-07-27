@@ -6,6 +6,14 @@ class Item extends Entity {
 
 		this.required = required;
 	}
+	static genId() {
+		if (this.curId === undefined) {
+			this.curId = 0;
+		} else {
+			this.curId++;
+		}
+		return this.curId;
+	}
 }
 
 export default Item;

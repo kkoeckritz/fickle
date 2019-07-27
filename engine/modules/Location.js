@@ -9,6 +9,14 @@ class Location extends Entity {
 		this.people = people;
 		this.task = task;
 	}
+	static genId() {
+		if (this.curId === undefined) {
+			this.curId = 0;
+		} else {
+			this.curId++;
+		}
+		return this.curId;
+	}
 }
 
 export default Location;

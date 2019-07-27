@@ -6,6 +6,14 @@ class Character extends Entity {
 
 		this.sayings = sayings;
 	}
+	static genId() {
+		if (this.curId === undefined) {
+			this.curId = 0;
+		} else {
+			this.curId++;
+		}
+		return this.curId;
+	}
 }
 
 export default Character;
