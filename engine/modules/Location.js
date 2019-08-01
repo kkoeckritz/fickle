@@ -1,13 +1,14 @@
 import Entity from "./Entity.js";
 
 class Location extends Entity {
-	constructor(name, desc, dirs, people, task) {
+	constructor(name, desc, dirs, people, items, task) {
 		super(name, desc);
 
-		this.name = name;
-		this.firs = dirs;
+		this.dirs = dirs;
 		this.people = people;
+		this.items = items;
 		this.task = task;
+		this.visited = false;
 	}
 	static genId() {
 		if (this.curId === undefined) {

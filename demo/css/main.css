@@ -2,14 +2,21 @@ body {
   all: unset;
 }
 
+form {
+  width: 100%;
+  display: inline-flex;
+}
+
 header {
   width: 100%;
   height: 3rem;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
   
-  background-color: #224455;
+  background-color: #145;
+  box-shadow: 0 2px 3px rgba(40, 40, 40, .5);
 }
 
 section {
@@ -19,38 +26,8 @@ section {
   align-items: center;
   justify-content: center;
 
-  background-color: black;
-}
-
-textarea {
-  margin: 0;
-  padding: 0;
-  resize: none;
-  width: 100%;
-
-  background-color: #224455;
-  font-size: 14pt;
-  font-family: 'Courier New', Courier, monospace;
-  border: none;
-}
-
-input {
-  width: 100%;
-  margin: 0;
-  padding: 5px;
-
-  color: white;
-  background-color: #224455;
-  font-size: 14pt;
-  font-family: 'Courier New', Courier, monospace;
-  border: none;
-}
-
-button {
-  color: white;
-  background-color: #224455;
-  font-size: 20pt;
-  border: none;
+  background-image: url(../images/beach01-small.jpg);
+  background-size: cover;
 }
 
 button::-moz-focus-inner {
@@ -66,21 +43,78 @@ button::-moz-focus-inner {
 .wrapper {
   width: 60%;
   height: max-content;
+  position: relative;
 
   border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 3px 3px rgba(40, 40, 40, .5);
 }
-
 
 .row {
-  position: relative;
   width: 100%;
   display: flex;
-  align-items: stretch;
-  justify-content: center;
+  
+  opacity: .9;
 }
 
-@media (max-width: 600px) {
-  wrapper {
-    width: 98%;
+.quickCommands {
+  width: 100%;
+  padding: 10px;
+
+  background-color: #134;
+  border-radius: 5px 5px 0 0;
+}
+
+.quick-button {
+  color: white;
+  background-color: #134;
+  font-size: 10pt;
+  border: none;
+}
+
+.div-area {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  height: 20em;
+
+  color: white;
+  background-color: #145;
+  font-size: 14pt;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.l-text {
+  text-align: left;
+}
+
+.r-text {
+  text-align: right;
+}
+
+.game-input {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+
+  color: white;
+  background-color: #134;
+  font-size: 14pt;
+  font-family: 'Courier New', Courier, monospace;
+  border: none;
+  border-radius: 0 0 0 5px;
+}
+
+.game-button {
+  color: white;
+  background-color: #134;
+  font-size: 20pt;
+  border: none;
+  border-radius: 0 0 5px 0;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    width: 95%;
   }
 }

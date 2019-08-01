@@ -18,19 +18,31 @@
   <section>
     <span class="wrapper">
       <div class="row">
-        <textarea name="fickleConsole" id="fickleConsole" rows="20" disabled></textarea>
+        <div class="quickCommands">
+          <span class="l-div">
+            <button class="quick-button">SAVE</button>
+            <button class="quick-button">LOAD</button>
+          </span>
+          <span class="r-div">
+            <button class="quick-button">SETTINGS</button>
+            <button class="quick-button">HELP</button>
+          </span>
+        </div>
       </div>
       <div class="row">
-        <input type="text" name="fickleEnty" id="fickleEntry" autocomplete="on" autofocus>
-        <button type="submit" id="fickleGo">⮊</button>
+        <div id="fickleConsole" class="div-area"></div>
+        </textarea>
+      </div>
+      <div class="row">
+      <form>
+        <input type="text" name="fickleEnty" id="fickleEntry" class="game-input" autocomplete="off" placeholder=">>" autofocus></input>
+        <button type="submit" id="fickleGo" class="game-button">⮊</button>
+      </form>
       </div>
     </span>
   </section>
 
-
-
   <script src="./js/jQuery-3.4.1.min.js"></script>
-  <script src="./js/loadData.js"></script>
-  <script src="./js/fickleInterface.js"></script>
+  <script src="./js/fickleInterface.js" type="module"></script>
 </body>
 </html>
