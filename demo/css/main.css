@@ -1,5 +1,6 @@
 body {
   all: unset;
+  
 }
 
 form {
@@ -15,7 +16,7 @@ header {
   align-items: center;
   justify-content: space-around;
   
-  background-color: #145;
+  background-color: #134;
   box-shadow: 0 2px 3px rgba(40, 40, 40, .5);
 }
 
@@ -23,10 +24,9 @@ section {
   width: 100%;
   height: calc(100vh - 3rem);
   display: flex;
-  align-items: center;
   justify-content: center;
 
-  background-image: url(../images/beach01-small.jpg);
+  background-image: url(../images/beach01-grain02.jpg);
   background-size: cover;
 }
 
@@ -41,13 +41,27 @@ button::-moz-focus-inner {
 }
 
 .wrapper {
-  width: 60%;
-  height: max-content;
   position: relative;
+  /* animation: fadeIn 2s; */
+}
 
-  border: 1px solid white;
+.wrapper--middle {
+  width: 60%;
+  align-self: center;
+  
   border-radius: 5px;
-  box-shadow: 0 3px 3px rgba(40, 40, 40, .5);
+}
+
+.wrapper--bottom {
+  width: 100%;
+  align-self: flex-end;
+  
+  border-radius: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .row {
@@ -57,17 +71,39 @@ button::-moz-focus-inner {
   opacity: .9;
 }
 
-.quickCommands {
+.control-button {
+  width: 50px;
+  height: 10px;
+  line-height: 10px;
+  margin: 0 auto;
+  position: relative;
+  
+  color: white;
+  background-color: #034;
+  border: none;
+}
+
+#upBtn {
+  display: none;
+
+  border-radius: 10px 10px 0 0;
+}
+
+#downBtn {
+  border-radius: 0 0 10px 10px;
+}
+
+.quick-commands {
   width: 100%;
   padding: 10px;
 
-  background-color: #134;
-  border-radius: 5px 5px 0 0;
+  background-color: #034;
+  border-radius: 10px 10px 0 0;
 }
 
 .quick-button {
   color: white;
-  background-color: #134;
+  background-color: #034;
   font-size: 10pt;
   border: none;
 }
@@ -76,45 +112,67 @@ button::-moz-focus-inner {
   margin: 0;
   padding: 10px;
   width: 100%;
-  height: 20em;
+  line-height: 2.5ex;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  box-sizing: content-box;
 
   color: white;
   background-color: #145;
   font-size: 14pt;
   font-family: 'Courier New', Courier, monospace;
+  border-width: 0 2px;
+  border-style: solid;
+  border-color: rgba(17, 51, 68, .9);
+}
+
+.div-area--middle {
+  height: calc(50ex + 20px);
+}
+
+.div-area--bottom {
+  height: calc(30ex + 20px);
 }
 
 .l-text {
+  line-height: 2.5ex;
+
   text-align: left;
 }
 
 .r-text {
+  line-height: 2.5ex;
+  
   text-align: right;
 }
 
 .game-input {
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 10px;
+  padding: 12px;
+  position: relative;
 
   color: white;
-  background-color: #134;
+  background-color: #034;
   font-size: 14pt;
   font-family: 'Courier New', Courier, monospace;
   border: none;
-  border-radius: 0 0 0 5px;
+  border-radius: 0 0 0 10px;
+  box-shadow: 0 3px 3px rgba(40, 40, 40, .5);
 }
 
 .game-button {
   color: white;
-  background-color: #134;
+  background-color: #034;
   font-size: 20pt;
   border: none;
-  border-radius: 0 0 5px 0;
+  border-radius: 0 0 10px 0;
+  box-shadow: 0 3px 3px rgba(40, 40, 40, .5);
 }
 
 @media (max-width: 800px) {
-  .wrapper {
+  .wrapper--middle {
     width: 95%;
   }
 }

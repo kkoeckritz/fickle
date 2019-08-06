@@ -16,9 +16,12 @@
     <span class="title">Fickle 1.0.0 Demo</span>
   </header>
   <section>
-    <span class="wrapper">
+    <div class="wrapper wrapper--middle">
       <div class="row">
-        <div class="quickCommands">
+        <button id="upBtn" class="control-button">︿</button>
+      </div>
+      <div class="row">
+        <div class="quick-commands">
           <span class="l-div">
             <button class="quick-button">SAVE</button>
             <button class="quick-button">LOAD</button>
@@ -30,7 +33,7 @@
         </div>
       </div>
       <div class="row">
-        <div id="fickleConsole" class="div-area"></div>
+        <div id="fickleConsole" class="div-area div-area--middle"></div>
         </textarea>
       </div>
       <div class="row">
@@ -39,10 +42,14 @@
         <button type="submit" id="fickleGo" class="game-button">⮊</button>
       </form>
       </div>
-    </span>
+      <div class="row">
+        <button id="downBtn" class="control-button">﹀</button>
+      </div>
+    </div>
   </section>
 
   <script src="./js/jQuery-3.4.1.min.js"></script>
+  <script src="./js/main.js"></script>
   <script src="./js/fickleInterface.js" type="module"></script>
 </body>
 </html>

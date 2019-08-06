@@ -3,7 +3,13 @@
  */
 
 class Engine {
+	constructor() {
 
+	}
+	parseEntry(entry) {
+    
+	}
+  
 }
 
 export default Engine;

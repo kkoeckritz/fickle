@@ -25,9 +25,10 @@ function sendEntry() {
 	event.preventDefault();
 	let entryText = $fickleEntry.val().trim();
 
-
-	appendLeft(entryText);
+	appendLeft(`>> ${entryText}`);
 	$fickleEntry.val("");
+
+	$(".div-area").scrollTop($(".div-area")[0].scrollHeight);	
 }
 
 let unused = "Thick, mossy cyprus arch overhead.";

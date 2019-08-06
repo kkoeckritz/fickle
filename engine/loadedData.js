@@ -8,7 +8,7 @@ function loadLocations() {
 	let locations = [];
 
 	for (let i in gameData.locations) {
-		let curLocation = new Location(i.name, i.desc, i.dirs, i.people, i.items, i.task);
+		let curLocation = new Location(i.name, i.desc, i.people, i.items, i.task);
 		locations.push(curLocation);
 	}
 

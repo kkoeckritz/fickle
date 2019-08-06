@@ -1,10 +1,9 @@
 import Entity from "./Entity.js";
 
 class Location extends Entity {
-	constructor(name, desc, dirs, people, items, task) {
+	constructor(name, desc, people, items, task) {
 		super(name, desc);
 
-		this.dirs = dirs;
 		this.people = people;
 		this.items = items;
 		this.task = task;
