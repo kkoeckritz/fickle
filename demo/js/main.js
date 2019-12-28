@@ -6,6 +6,7 @@ let $divArea = $(".div-area");
 let $gameInput = $(".game-input");
 let $gameBtn = $(".game-button");
 
+// move wrapper content to middle of screen
 function moveWrapperUp() {
 	$divArea.removeClass("div-area--bottom");
 	$divArea.addClass("div-area--middle");
@@ -18,6 +19,7 @@ function moveWrapperUp() {
 	$wrapper.addClass("wrapper--middle");
 }
 
+// " bottom of screen
 function moveWrapperDown() {
 	$divArea.removeClass("div-area--middle");
 	$divArea.addClass("div-area--bottom");
@@ -30,5 +32,6 @@ function moveWrapperDown() {
 	$wrapper.addClass("wrapper--bottom");
 }
 
+// set up wrapper button listeners
 $upBtn.click(moveWrapperUp);
 $downBtn.click(moveWrapperDown);

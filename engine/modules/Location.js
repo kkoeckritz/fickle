@@ -17,6 +17,7 @@ class Location extends Entity {
 		}
 		return this.curId;
 	}
+	// CREATE DIR SETTER
 }
 
 export default Location;

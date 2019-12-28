@@ -6,7 +6,7 @@ let gameData = {
 	locations: [
 		{
 			name: "University Main Gate",
-			desc: "Humboldt State: A scholarly gateway to the forest.",
+			desc: "A scholarly gateway to the forest.",
 			dirs: {
 				n: 1,
 				ne: null,
@@ -23,7 +23,7 @@ let gameData = {
 		},
 		{
 			name: "Blondies",
-			desc: "Blondies: A diminutive hipster's dive bar.",
+			desc: "A diminutive hipster's dive bar.",
 			dirs: {
 				n: null,
 				ne: null,
@@ -40,7 +40,7 @@ let gameData = {
 		},
 		{
 			name: "Redwood Curtain",
-			desc: "Redwood Curtain: ",
+			desc: "Lushest disc golf course in the West, probably.",
 			dirs: {
 				n: null,
 				ne: null,
@@ -56,8 +56,8 @@ let gameData = {
 			task: null
 		},
 		{
-			name: "Bay View",
-			desc: "",
+			name: "Union Street",
+			desc: "A foggy view of the Humboldt Bay.",
 			dirs: {
 				n: 0,
 				ne: null,
@@ -73,8 +73,8 @@ let gameData = {
 			task: null
 		},
 		{
-			name: "Bay View",
-			desc: "",
+			name: "Wildberries",
+			desc: "Quality groceries at the price you'd expect.",
 			dirs: {
 				n: null,
 				ne: null,
@@ -89,6 +89,33 @@ let gameData = {
 			items: null,
 			task: null
 		},
+	],
+	characters: [
+		{
+			name: "Henry",
+			desc: "A quiet man who's grown tired of living in the forest.",
+			sayings: [
+				"Hey, man... where you living right now?",
+				"Doesn't get much better than sleeping under the redwoods, let me tell you.",
+				"Ever have anyone sleep on your couch? So annoying, man!"
+			]
+		},
+		{
+			name: "Becca",
+			desc: "Kind but nervous. Great to talk with for a few seconds at a time.",
+			sayings: [
+				"It's really cold in here. Isn't it?",
+				"I like horses. I feel like I can tell them anything. Same with rocks.",
+				"Most people don't think about rocks. I do."
+			]
+		}
+	],
+	items: [
+		{
+			name: "Sunglasses",
+			desc: "You need these to see anything on the beach.",
+			required: true
+		}
 	]
 };
 
