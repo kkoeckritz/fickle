@@ -12,9 +12,9 @@ class Engine {
 	runAction(inArr) {
 		let ret = null;
 
-		switch(inArr[0]) {
-			case ""
-		}
+		// switch(inArr[0]) {
+		// 	case ""
+		// }
 	}
 	parseEntry(entry) {
 		let entryArr = entry.split(" ");

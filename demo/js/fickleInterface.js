@@ -50,7 +50,7 @@ function sendEntry() {
 	let entryText = $fickleEntry.val().trim().toLowerCase();
 	if (verifyText(entryText)) {
 		appendLeft(`>> ${entryText}`);
-		parseText(entryText);
+		// parseText(entryText);
 		$fickleEntry.val("");
 	} else {
 		$fickleEntry.css("color", "red");
